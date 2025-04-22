@@ -20,3 +20,15 @@ A simple and user-friendly web application to manage and track pet vaccination s
 
 ## 📁 Project Structure
 
+pet-vaccine-maker/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── README.md
+└── LICENSE
+
