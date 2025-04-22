@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Vaccine Maker</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Pet Vaccine Maker</h1>
+    <form id="pet-form">
+      <input type="text" id="pet-name" placeholder="Pet Name" required />
+      <input type="text" id="pet-type" placeholder="Pet Type" required />
+      <input type="date" id="pet-dob" required />
+      <input type="text" id="vaccine-name" placeholder="Vaccine Name" required />
+      <input type="date" id="vaccine-date" required />
+      <input type="date" id="next-date" required />
+      <button type="submit">Add Record</button>
+    </form>
+
+    <table id="record-table">
+      <thead>
+        <tr>
+          <th>Pet Name</th><th>Type</th><th>DOB</th><th>Vaccine</th><th>Date Given</th><th>Next Due</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="generate-pdf">Download PDF</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
