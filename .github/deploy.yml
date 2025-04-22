@@ -1,4 +1,4 @@
-name: Deploy Pet Vaccine Maker
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -8,12 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy using GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: .  # Root directory where index.html is located
